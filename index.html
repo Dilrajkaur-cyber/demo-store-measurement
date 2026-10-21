@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo Store - Measurement Learning Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- ORDER MATTERS: config, then boot.js (consent defaults, then GTM). Do not add defer/async to these two. -->
+  <script src="config.js"></script>
+  <script src="boot.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/">Demo Store</a>
+    <nav><a href="#/">Products</a> <a href="#/cart">Cart (<span id="cart-count">0</span>)</a></nav>
+  </header>
+
+  <p id="bug-note" class="bug" hidden></p>
+
+  <div class="layout">
+    <main id="view" aria-live="polite"></main>
+    <aside class="log" aria-label="dataLayer event log">
+      <h2>dataLayer event log</h2>
+      <p class="muted">Every push appears here, newest first. Use it alongside GTM Preview mode.</p>
+      <ul id="event-log-list"></ul>
+    </aside>
+  </div>
+
+  <div id="consent-banner" class="banner" role="dialog" aria-label="Cookie consent" hidden>
+    <p>This demo uses Google Consent Mode v2. Choose what the tags may use. Nothing real is collected: it is a learning project.</p>
+    <div class="actions">
+      <button class="btn primary" data-choice="accept_all">Accept all</button>
+      <button class="btn" data-choice="analytics_only">Analytics only</button>
+      <button class="btn" data-choice="reject_all">Reject all</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Personal learning project. No real products, payments or customers.
+      <button id="cookie-settings" class="link">Cookie settings</button></p>
+  </footer>
+
+  <script src="hash.js"></script>
+  <script src="consent.js"></script>
+  <script src="store.js"></script>
+</body>
+</html>
