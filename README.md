@@ -2,7 +2,7 @@
 
 A small demo online store I built to learn web measurement end to end: a clean **data layer**, **Google Tag Manager**, **GA4** e-commerce events, **Consent Mode v2**, and **hashed user data** for Enhanced Conversions concepts. It also includes a **bug lab** where I break the setup on purpose and practise diagnosing it, and a Python script that simulates sending an offline purchase through the **GA4 Measurement Protocol**.
 
-> **Status: [In progress / Built]**  (edit this line to match reality)
+> **Status: [In progress]**  (edit this line to match reality)
 > This is a personal learning project. It is not client work, and it makes no claims about business results. Real products, customers and payments do not exist here.
 
 ## What it demonstrates
